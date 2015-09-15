@@ -102,7 +102,7 @@
 
 -(void) newBuildDidBecomeAvailable:(NSNotification *)notification {
   // Show an alert view when a new build becomes available. The user can choose to "Update" the app, or "Cancel".
-  // If the user preses "Cancel", their app will update when they restart the app.
+  // If the user presses "Cancel", their app will update when they close the app.
   
   AHBuild *build = notification.userInfo[AHBuildManagerBuildKey];
   NSString *alertMessage = [NSString stringWithFormat:@"There's a new update available.\n\nUpdate description:\n\n %@", build.buildDescription];
