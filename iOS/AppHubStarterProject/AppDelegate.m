@@ -24,14 +24,15 @@
 
 - (BOOL)application:(__unused UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  // TODO: replace "APPLICATION ID" with your ApplicationID from the AppHub dashboard.
-  [AppHub setApplicationID:@"APPLICATION ID"];
+  // TODO: replace "123" with your Application ID from the AppHub dashboard.
+  [AppHub setApplicationID:@"123"];
   
   _bridge = [[RCTBridge alloc] initWithDelegate:self
                                   launchOptions:launchOptions];
   
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:_bridge
-                                                   moduleName:@"AppHubStarterProject"];
+                                                   moduleName:@"AppHubStarterProject"
+                                            initialProperties:nil];
   
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
