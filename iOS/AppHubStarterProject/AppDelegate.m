@@ -25,7 +25,7 @@
 - (BOOL)application:(__unused UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   // TODO: replace "123" with your Application ID from the AppHub dashboard.
-  [AppHub setApplicationID:@"123"];
+  [AppHub setApplicationID:@"41cKYHyYF5qg1z0GV5hE"];
   
   _bridge = [[RCTBridge alloc] initWithDelegate:self
                                   launchOptions:launchOptions];
@@ -61,7 +61,7 @@
    * OPTION 1
    * Load from development server. Start the server from the repository root:
    *
-   * $ npm start
+   * $ react-native start
    *
    * To run on device, change `localhost` to the IP address of your computer
    * (you can get this by typing `ifconfig` into the terminal and selecting the
@@ -69,7 +69,7 @@
    * on the same Wi-Fi network.
    */
   
-//  sourceURL = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle"];
+//  sourceURL = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=true"];
   
   /**
    * OPTION 2 - AppHub
@@ -80,15 +80,14 @@
    * Make sure to re-generate the static bundle by navigating to your Xcode project
    * folder and running
    *
-   * $ curl 'http://localhost:8081/index.ios.bundle' -o main.jsbundle
+   * $ react-native bundle
    *
-   * then add the `main.jsbundle` file to your project.
    */
 
   AHBuild *build = [[AppHub buildManager] currentBuild];
   sourceURL = [build.bundle URLForResource:@"main"
                              withExtension:@"jsbundle"];
-  
+
   return sourceURL;
 }
 
