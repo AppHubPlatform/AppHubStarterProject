@@ -80,7 +80,7 @@
    * Make sure to re-generate the static bundle by navigating to your Xcode project
    * folder and running
    *
-   * $ react-native bundle
+   * $ react-native bundle --entry-file index.ios.js --platform ios --dev true --bundle-output iOS/main.jsbundle
    *
    */
 
