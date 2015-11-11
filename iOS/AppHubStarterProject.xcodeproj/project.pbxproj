@@ -21,8 +21,8 @@
 		400C2F581BA4B5AA0003A96D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 400C2F501BA4B5AA0003A96D /* LaunchScreen.xib */; };
 		400C2F591BA4B5AA0003A96D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400C2F521BA4B5AA0003A96D /* Images.xcassets */; };
 		400C2F5C1BA4B5AA0003A96D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 400C2F551BA4B5AA0003A96D /* main.m */; };
-		40AC29CF1BE2AB4300CD45C7 /* AppHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AC29CE1BE2AB4300CD45C7 /* AppHub.framework */; };
-		40AC29D11BE2AE9000CD45C7 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 40AC29D01BE2AE9000CD45C7 /* main.jsbundle */; };
+		406A9B9A1BF3F34B0083E538 /* AppHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406A9B991BF3F34B0083E538 /* AppHub.framework */; };
+		406A9B9C1BF3F4780083E538 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 406A9B9B1BF3F4780083E538 /* main.jsbundle */; };
 		40EA7FBA1BAB768000CD144C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 405E2BF01BAB694F00A6915B /* libz.tbd */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
@@ -118,8 +118,8 @@
 		400C2F531BA4B5AA0003A96D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AppHubStarterProject/Info.plist; sourceTree = SOURCE_ROOT; };
 		400C2F551BA4B5AA0003A96D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AppHubStarterProject/main.m; sourceTree = SOURCE_ROOT; };
 		405E2BF01BAB694F00A6915B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		40AC29CE1BE2AB4300CD45C7 /* AppHub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppHub.framework; sourceTree = "<group>"; };
-		40AC29D01BE2AE9000CD45C7 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = SOURCE_ROOT; };
+		406A9B991BF3F34B0083E538 /* AppHub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppHub.framework; path = ../node_modules/apphub/AppHub.framework; sourceTree = "<group>"; };
+		406A9B9B1BF3F4780083E538 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = SOURCE_ROOT; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,7 +136,7 @@
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
-				40AC29CF1BE2AB4300CD45C7 /* AppHub.framework in Frameworks */,
+				406A9B9A1BF3F34B0083E538 /* AppHub.framework in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
@@ -207,7 +207,7 @@
 		13B07FAE1A68108700A75B9A /* AppHubStarterProject */ = {
 			isa = PBXGroup;
 			children = (
-				40AC29D01BE2AE9000CD45C7 /* main.jsbundle */,
+				406A9B9B1BF3F4780083E538 /* main.jsbundle */,
 				400C2F4C1BA4B5AA0003A96D /* AppDelegate.h */,
 				400C2F4D1BA4B5AA0003A96D /* AppDelegate.m */,
 				400C2F4F1BA4B5AA0003A96D /* Base.lproj */,
@@ -248,7 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				405E2BF01BAB694F00A6915B /* libz.tbd */,
-				40AC29CE1BE2AB4300CD45C7 /* AppHub.framework */,
+				406A9B991BF3F34B0083E538 /* AppHub.framework */,
 				400C2F3C1BA4AAD40003A96D /* SystemConfiguration.framework */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -458,7 +458,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40AC29D11BE2AE9000CD45C7 /* main.jsbundle in Resources */,
+				406A9B9C1BF3F4780083E538 /* main.jsbundle in Resources */,
 				400C2F581BA4B5AA0003A96D /* LaunchScreen.xib in Resources */,
 				400C2F591BA4B5AA0003A96D /* Images.xcassets in Resources */,
 			);
@@ -498,6 +498,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppHubStarterProject",
 					"$(PROJECT_DIR)",
+					"$(SRCROOT)/../node_modules/apphub/**",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -520,6 +521,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppHubStarterProject",
 					"$(PROJECT_DIR)",
+					"$(SRCROOT)/../node_modules/apphub/**",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
