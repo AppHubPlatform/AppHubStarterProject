@@ -6,7 +6,7 @@
     "start": "node_modules/react-native/packager/packager.sh"
   },
   "dependencies": {
-    "apphub": "^0.2.1",
+    "apphub": "^0.3.3",
     "react-native": "^0.14.2"
   }
 }

@@ -7,7 +7,7 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
-#import <AppHub/AppHub.h>
+#import "AppHub.h"
 #import "AppDelegate.h"
 
 #import "RCTBridge.h"
@@ -25,7 +25,7 @@
 - (BOOL)application:(__unused UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   // TODO: replace "123" with your Application ID from the AppHub dashboard.
-  [AppHub setApplicationID:@"41cKYHyYF5qg1z0GV5hE"];
+  [AppHub setApplicationID:@"123"];
   
   _bridge = [[RCTBridge alloc] initWithDelegate:self
                                   launchOptions:launchOptions];
