@@ -30,8 +30,6 @@ You should use "Option 1" while developing, and switch to "Option 2" when deploy
 
 ## Creating AppHub Builds
 
-To update your app, just build a standard `.ipa` file and upload the new build with the AppHub dashboard.
-
-We recommend using [gym](https://github.com/fastlane/gym) to create an `.ipa` file from your project,
-but you can also [build an ipa with Xcode](http://stackoverflow.com/questions/25970741/how-to-create-ipa-in-xcode-6).
+To update your app, use the [AppHub CLI](http://docs.apphub.io/v1.0/docs/apphub-cli) to build a .zip
+of your app. You can then use the AppHub Dashboard or REST API to upload the build.
 
